@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.dadaabc.zhuozan.pack-plugin.main" target="1.8" />
+      <module name="com.dadaabc.zhuozan.pack-plugin.test" target="1.8" />
+      <module name="com.dadaabc.zhuozan.sample.main" target="1.8" />
+      <module name="com.dadaabc.zhuozan.sample.test" target="1.8" />
+      <module name="pack-plugin.sample.main" target="1.8" />
+      <module name="pack-plugin.sample.test" target="1.8" />
+      <module name="packPlugin.com.dadaabc.zhuozan.pack-plugin.main" target="1.8" />
+      <module name="packPlugin.com.dadaabc.zhuozan.pack-plugin.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

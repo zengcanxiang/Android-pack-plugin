@@ -1,0 +1,46 @@
+{
+  "channelInfoList": [
+    {
+      "channel": "360",
+      "alias": "360",
+      "extraInfo": {
+        "id": 1
+      }
+    },
+    {
+      "channel": "Tencent",
+      "alias": "应用宝",
+      "extraInfo": {
+        "id": 2
+      }
+    },
+    {
+      "channel": "Huawei",
+      "alias": "华为",
+      "extraInfo": {
+        "id": 3
+      }
+    },
+    {
+      "channel": "Xiaomi",
+      "alias": "小米",
+      "extraInfo": {
+        "id": 4
+      }
+    },
+    {
+      "channel": "Oppo",
+      "alias": "oppo",
+      "extraInfo": {
+        "id": 5
+      }
+    },
+    {
+      "channel": "vivo",
+      "alias": "vivo",
+      "extraInfo": {
+        "id": 6
+      }
+    }
+  ]
+}

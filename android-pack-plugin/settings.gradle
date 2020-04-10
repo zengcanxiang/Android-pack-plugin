@@ -1,0 +1,4 @@
+rootProject.name = 'pack-plugin'
+include 'packPlugin'
+findProject(':packPlugin')?.name = 'android-pack-plugin'
+

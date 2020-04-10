@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'cn.zengcanxiang.androidPackPlugin'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "cn.zengcanxiang.packpluginSample"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias "sample"
+            keyPassword "123456"
+            storeFile file(project.projectDir.absolutePath+"/sample.jks")
+            storePassword "123456"
+        }
+    }
+
+}
+
+androidPackPlugin {
+    Properties properties = new Properties()
+    InputStream inputStream = project.rootProject.file('local.properties').newDataInputStream()
+    properties.load(inputStream)
+
+    apkFilePath "${project.projectDir}/app-release.apk"
+    firmAccountName properties.getProperty("firmAccountName")
+    firmAccountPwd properties.getProperty("firmAccountPwd")
+    channelConfigFile project.file("${project.projectDir}/channleConfig.json")
+    outPath properties.getProperty("outPath")
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+}
