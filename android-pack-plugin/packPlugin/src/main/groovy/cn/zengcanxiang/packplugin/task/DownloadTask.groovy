@@ -17,7 +17,7 @@ class DownloadTask extends DefaultTask {
 
 //    private def walle_cli_url = "https://github.com/Meituan-Dianping/walle/releases/download/v1.1.6/walle-cli-all.jar"
     //TODO 由于美团官方暂时没有提供最新的jar。所以下载一个第三方编译的
-    private def walle_cli_url = "https://github.com/vclub/vclub.github.io/raw/master/walle-cli-all.jar"
+    private def walle_cli_url = "https://github.com/zengcanxiang/Android-pack-plugin/blob/master/walle_cli.jar"
 
     private File firmZipFile
 

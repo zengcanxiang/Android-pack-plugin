@@ -21,7 +21,7 @@ Android的打包gradle插件。
     	jcenter()
     }
     dependencies{
-    	classpath 'cn.zengcanxiang:android-pack-plugin:1.0.0'
+    	classpath 'cn.zengcanxiang:android-pack-plugin:1.0.1'
     }
   ```
 
@@ -57,3 +57,4 @@ Android的打包gradle插件。
 
 - [ ] 360config高级设置支持(主要是没有高贵的vip体验，无法验证效果是否有效)
 - [ ] 持续跟进waller的最新版本
+- [ ] 多渠道打包在高版本api好像存在兼容问题 

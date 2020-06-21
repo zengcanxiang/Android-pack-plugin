@@ -20,7 +20,7 @@ dependencies {
 
 group 'cn.zengcanxiang'
 def artifact = 'android-pack-plugin'
-version '1.0.0'
+version '1.0.1'
 
 publishing {
     publications {
@@ -38,19 +38,13 @@ task sourcesJar(type: Jar) {
     classifier 'sources'
 }
 
-task javadocJar(type: Jar) {
-    from javadoc
-    classifier 'javadoc'
-}
-
-javadoc {
-    if (JavaVersion.current().isJava9Compatible()) {
-        options.addBooleanOption('html5', true)
-    }
-}
+//task javadocJar(type: Jar) {
+//    from javadoc
+//    classifier 'javadoc'
+//}
 
 artifacts {
-    archives javadocJar
+//    archives javadocJar
     archives sourcesJar
 }
 
